@@ -40,7 +40,7 @@ const Navbar = () => {
         </Link>
         <Link href="/">
           <a className={styles.navMid}>
-            <img src="/logo.png" className={styles.logo} />
+            <img src="/Logo.png" className={styles.logo} />
           </a>
         </Link>
         <Link href="/contact">
