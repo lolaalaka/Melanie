@@ -1,4 +1,4 @@
-@import url(https://allfont.net/allfont.css?fonts=nympha-one);
+@import url("https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap");
 @import "mixins";
 $white: #fff;
 $text-gray: #d6d0ce;
@@ -22,7 +22,7 @@ $text-gray: #d6d0ce;
     @include editorialText();
     font-size: 14vw;
     position: absolute;
-    top: -16%;
+    top: -18%;
     left: 25%;
     color: $white;
     z-index: 4;
@@ -32,7 +32,7 @@ $text-gray: #d6d0ce;
     }
 
     @include bp(phone) {
-      top: -7%;
+      top: -6%;
     }
 
     @include bp(smallerPhones) {
@@ -66,7 +66,7 @@ $text-gray: #d6d0ce;
   }
 
   .bottom {
-    font-family: "Nympha One";
+    font-family: "Castoro";
     font-size: 2.5vw;
   }
 }

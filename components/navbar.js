@@ -35,8 +35,8 @@ const Navbar = () => {
   return (
     <div className={styles.con}>
       <nav className={styles.navContainer}>
-        <Link href="/about">
-          <a className={styles.navAbout}>ABOUT</a>
+        <Link href="/homepage">
+          <a className={styles.navAbout}>HOME</a>
         </Link>
         <Link href="/">
           <a className={styles.navMid}>
@@ -63,8 +63,8 @@ const Navbar = () => {
             }
           >
             <div className="textCon">
-              <a href="/about">
-                <div className="ddText">About</div>
+              <a href="/homepage">
+                <div className="ddText">Home</div>
               </a>
               <a href="/contact">
                 <div className="ddText">Contact</div>

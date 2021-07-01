@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap");
+
 @mixin layOut {
   font-size: 1.25rem;
   font-weight: 400;
 }
 
 @mixin editorialText {
-  font-family: "Nympha One";
+  font-family: "Castoro";
 }
 
 @mixin background {
@@ -55,7 +57,7 @@
     @media #{$smallerPhones} {
       @content;
     }
-  } @else if $point == phones {
+  } @else if $point == phone {
     @media #{$phones} {
       @content;
     }

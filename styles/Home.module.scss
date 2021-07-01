@@ -1,4 +1,4 @@
-@import url(https://allfont.net/allfont.css?fonts=nympha-one);
+@import url("https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap");
 @import "mixins";
 $white: #fff;
 
@@ -31,7 +31,7 @@ $white: #fff;
   position: absolute;
 
   .bruxells {
-    font-family: "Nympha One";
+    font-family: "Castoro";
     width: 5%;
     color: $white;
     font-size: 9vw;
@@ -61,7 +61,7 @@ $white: #fff;
   left: 35%;
 
   .melanie {
-    font-family: "Nympha One";
+    font-family: "Castoro";
     color: $white;
     font-size: 12vw;
     position: absolute;
@@ -92,7 +92,7 @@ $white: #fff;
   right: 0%;
 
   .problem {
-    font-family: "Nympha One";
+    font-family: "Castoro";
     width: 5%;
     color: $white;
     font-size: 9vw;

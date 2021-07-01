@@ -1,6 +1,5 @@
-import Homepage from "../components/homepage";
-import styles from "../styles/Home.module.scss";
+import About from "../pages/about";
 
 export default function Home() {
-  return <Homepage />;
+  return <About />;
 }
