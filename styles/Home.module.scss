@@ -1,0 +1,116 @@
+@import url(https://allfont.net/allfont.css?fonts=nympha-one);
+@import "mixins";
+$white: #fff;
+
+.box {
+  opacity: 1;
+}
+.containerHome {
+  max-width: 100%;
+  height: 130vh;
+
+  @include tablet {
+    height: 100vh;
+  }
+  .innerHome {
+    width: 100%;
+    position: relative;
+    padding-top: 10%;
+    z-index: -1;
+
+    @include phone {
+      padding-top: 15%;
+    }
+  }
+}
+
+.firstCard {
+  width: 10vw;
+  height: 80vh;
+  opacity: 0.3;
+  position: absolute;
+
+  .bruxells {
+    font-family: "Nympha One";
+    width: 5%;
+    color: $white;
+    font-size: 9vw;
+    position: absolute;
+    top: 75%;
+    left: 5%;
+
+    @include tablet {
+      top: 80%;
+    }
+
+    @include phone {
+      top: 87%;
+    }
+  }
+
+  .img {
+    background-image: url(/IMG.png);
+    @include background();
+  }
+}
+
+.secondCard {
+  width: 30vw;
+  height: 80vh;
+  position: absolute;
+  left: 35%;
+
+  .melanie {
+    font-family: "Nympha One";
+    color: $white;
+    font-size: 12vw;
+    position: absolute;
+    top: 75%;
+    left: -15%;
+
+    @include tablet {
+      top: 80%;
+    }
+
+    @include phone {
+      top: 90%;
+      left: -5%;
+    }
+  }
+
+  .imgMid {
+    background-image: url(/imgMid.png);
+    @include background();
+  }
+}
+
+.thirdCard {
+  width: 10vw;
+  height: 80vh;
+  opacity: 0.3;
+  position: absolute;
+  right: 0%;
+
+  .problem {
+    font-family: "Nympha One";
+    width: 5%;
+    color: $white;
+    font-size: 9vw;
+    position: absolute;
+    top: 75%;
+    left: -6%;
+
+    @include tablet {
+      top: 80%;
+    }
+
+    @include phone {
+      top: 87%;
+    }
+  }
+
+  .imgLast {
+    background-image: url(/imgLast.png);
+    @include background();
+  }
+}

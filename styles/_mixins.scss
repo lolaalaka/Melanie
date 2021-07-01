@@ -1,0 +1,46 @@
+@mixin layOut {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+@mixin editorialText {
+  font-family: "Nympha One";
+}
+
+@mixin background {
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin lowerImages {
+  width: 40vw;
+  height: 135vh;
+}
+
+@mixin desktop() {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin phone() {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin smallerPhones() {
+  @media (max-width: 400px) {
+    @content;
+  }
+}

@@ -1,0 +1,300 @@
+@import url(https://allfont.net/allfont.css?fonts=nympha-one);
+@import "mixins";
+$white: #fff;
+$text-gray: #d6d0ce;
+
+.container {
+  max-width: 100%;
+
+  .inner {
+    width: 100%;
+  }
+}
+
+.firstCard {
+  width: 90vw;
+  height: 120vh;
+  margin: 15% auto 0;
+  position: relative;
+  z-index: -1;
+
+  .editorial {
+    @include editorialText();
+    font-size: 14vw;
+    position: absolute;
+    top: -16%;
+    left: 25%;
+    color: $white;
+    z-index: 4;
+
+    @include tablet {
+      top: -10%;
+    }
+
+    @include phone {
+      top: -7%;
+    }
+
+    @include smallerPhones {
+      top: -5%;
+    }
+  }
+
+  .firstImg {
+    background-image: url(/Main-IMG.png);
+    @include background();
+  }
+}
+
+.directorTexts {
+  display: flex;
+  max-width: 100%;
+  width: 50%;
+  height: 10%;
+  justify-content: space-evenly;
+  margin: 7% auto 0;
+
+  .textGroup {
+    color: $text-gray;
+  }
+
+  .top {
+    font-family: "monospace";
+    font-weight: 400;
+    font-size: 1.5vw;
+    line-height: 1;
+  }
+
+  .bottom {
+    font-family: "Nympha One";
+    font-size: 2.5vw;
+  }
+}
+
+.secondCard {
+  width: 75vw;
+  height: 100vh;
+  margin: 10% 5% 0;
+
+  .secondImg {
+    background-image: url("https://images.unsplash.com/photo-1594327248395-7354c282866d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d29tYW4lMjBmYWNlfGVufDB8MHwwfHRlYWx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=60");
+    @include background();
+  }
+}
+
+.thirdCard {
+  width: 75vw;
+  height: 90vh;
+  margin: 15% 5% 0 20%;
+  position: relative;
+  z-index: 10;
+
+  .editorialII {
+    @include editorialText();
+    font-size: 16vw;
+    color: #8d8d8d;
+    position: absolute;
+    top: -25%;
+    left: 5%;
+    z-index: -1;
+
+    @include tablet {
+      top: -15%;
+    }
+
+    @include phone {
+      top: -10%;
+    }
+
+    @include smallerPhones {
+      top: -7%;
+    }
+  }
+
+  .thirdImg {
+    background-image: url("https://images.unsplash.com/photo-1561502401-706961d9037a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1100&q=80");
+    @include background();
+  }
+}
+
+.fourthImg {
+  background-image: url("https://images.unsplash.com/photo-1507704297280-7632bf5555c8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80");
+  @include background();
+}
+
+.lowerCon {
+  position: relative;
+  width: 90vw;
+  height: 330vh;
+  margin: 20% auto 0;
+
+  .fifthImgCon {
+    @include lowerImages();
+    position: absolute;
+    right: 0;
+
+    .fifthImg {
+      @include background();
+      background-image: url("https://images.unsplash.com/photo-1557701472-b7ea9af8aa9a?ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTB8MjExNzUzMXx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80");
+    }
+  }
+
+  .sixthImgCon {
+    @include lowerImages();
+    position: absolute;
+    left: 0;
+    top: 25%;
+
+    .sixthImg {
+      @include background();
+      background-image: url("https://images.unsplash.com/photo-1611691542850-f4ce18d3842f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80");
+
+      @include tablet {
+        background-position: right;
+      }
+    }
+  }
+
+  .seventhImgCon {
+    @include lowerImages();
+    position: absolute;
+    right: 0;
+    top: 59%;
+
+    .seventhImg {
+      @include background();
+      background-image: url("https://images.unsplash.com/photo-1551504130-575d34c640fd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80");
+    }
+  }
+}
+
+.eightCard {
+  width: 100vw;
+  height: 130vh;
+  margin-top: 9%;
+  position: relative;
+
+  @include tablet {
+    height: 100vh;
+    margin-top: 15%;
+  }
+
+  @include phone {
+    width: 70vw;
+    height: 70vh;
+  }
+
+  .threeEditCon {
+    text-align: center;
+  }
+
+  .editorialIII {
+    @include editorialText();
+    font-size: 16vw;
+    color: $white;
+  }
+
+  .thirdText {
+    @include editorialText();
+    font-size: 16vw;
+    color: $white;
+  }
+
+  .eightImg {
+    @include background();
+    background-image: url("https://images.unsplash.com/photo-1567720359666-1cf6be3d5fa3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=50");
+    position: absolute;
+    top: 5%;
+    left: 0;
+    transform: rotate(10deg);
+
+    @include phone {
+      left: 15%;
+    }
+  }
+}
+
+.nextProjectCon {
+  width: 100vw;
+  height: 100vh;
+  margin: 20% 0 0;
+  position: relative;
+
+  @include phone {
+    margin-top: 40%;
+  }
+
+  .npImagesCon {
+    width: 70%;
+    height: 70%;
+    margin: 0 auto;
+    position: relative;
+    z-index: -1;
+  }
+
+  .ninthCard {
+    width: 30vw;
+    height: 80vh;
+    transform: rotate(7deg);
+    position: absolute;
+    top: -5%;
+
+    @include phone {
+      height: 50vh;
+    }
+
+    .ninthImg {
+      @include background();
+      background-image: url(/ninthImg.png);
+    }
+  }
+  .tenthCard {
+    width: 30vw;
+    height: 80vh;
+    transform: rotate(-7deg);
+    position: absolute;
+    left: 30%;
+    z-index: 10;
+
+    @include phone {
+      height: 50vh;
+    }
+
+    .tenthImg {
+      @include background();
+      background-image: url(/tenthImg.png);
+    }
+  }
+  .eleventhCard {
+    width: 30vw;
+    height: 80vh;
+    transform: rotate(-15deg);
+    position: absolute;
+    left: 55%;
+    top: 10%;
+    z-index: -1;
+
+    @include phone {
+      height: 50vh;
+    }
+
+    .eleventhImg {
+      @include background();
+      background-image: url(/eventhImg.png);
+    }
+  }
+
+  .nextProjectText {
+    @include editorialText();
+    font-size: 11vw;
+    color: $white;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    z-index: 5;
+  }
+}
+
+@media screen {
+}
