@@ -13,8 +13,8 @@ export const dropAnimation = () => {
 };
 
 export const navAnimation = () => {
-  tl.from("nav", {
-    duration: 0.3,
+  gsap.from(".Layout_con__33IY6", {
+    duration: 0.5,
     y: -20,
     opacity: 0,
     ease: "power3.easeIn",

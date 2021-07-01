@@ -5,10 +5,10 @@ $text-gray: #d6d0ce;
 
 .container {
   max-width: 100%;
+}
 
-  .inner {
-    width: 100%;
-  }
+.inner {
+  width: 100%;
 }
 
 .firstCard {
@@ -27,15 +27,15 @@ $text-gray: #d6d0ce;
     color: $white;
     z-index: 4;
 
-    @include tablet {
+    @include bp(tablet) {
       top: -10%;
     }
 
-    @include phone {
+    @include bp(phone) {
       top: -7%;
     }
 
-    @include smallerPhones {
+    @include bp(smallerPhones) {
       top: -5%;
     }
   }
@@ -98,15 +98,15 @@ $text-gray: #d6d0ce;
     left: 5%;
     z-index: -1;
 
-    @include tablet {
+    @include bp(tablet) {
       top: -15%;
     }
 
-    @include phone {
+    @include bp(phone) {
       top: -10%;
     }
 
-    @include smallerPhones {
+    @include bp(smallerPhones) {
       top: -7%;
     }
   }
@@ -149,7 +149,7 @@ $text-gray: #d6d0ce;
       @include background();
       background-image: url("https://images.unsplash.com/photo-1611691542850-f4ce18d3842f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80");
 
-      @include tablet {
+      @include bp(tablet) {
         background-position: right;
       }
     }
@@ -174,12 +174,12 @@ $text-gray: #d6d0ce;
   margin-top: 9%;
   position: relative;
 
-  @include tablet {
+  @include bp(tablet) {
     height: 100vh;
     margin-top: 15%;
   }
 
-  @include phone {
+  @include bp(phone) {
     width: 70vw;
     height: 70vh;
   }
@@ -208,7 +208,7 @@ $text-gray: #d6d0ce;
     left: 0;
     transform: rotate(10deg);
 
-    @include phone {
+    @include bp(phone) {
       left: 15%;
     }
   }
@@ -220,7 +220,7 @@ $text-gray: #d6d0ce;
   margin: 20% 0 0;
   position: relative;
 
-  @include phone {
+  @include bp(phone) {
     margin-top: 40%;
   }
 
@@ -239,7 +239,7 @@ $text-gray: #d6d0ce;
     position: absolute;
     top: -5%;
 
-    @include phone {
+    @include bp(phone) {
       height: 50vh;
     }
 
@@ -256,7 +256,7 @@ $text-gray: #d6d0ce;
     left: 30%;
     z-index: 10;
 
-    @include phone {
+    @include bp(phone) {
       height: 50vh;
     }
 
@@ -274,7 +274,7 @@ $text-gray: #d6d0ce;
     top: 10%;
     z-index: -1;
 
-    @include phone {
+    @include bp(phone) {
       height: 50vh;
     }
 
@@ -294,7 +294,4 @@ $text-gray: #d6d0ce;
     left: 20%;
     z-index: 5;
   }
-}
-
-@media screen {
 }

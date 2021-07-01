@@ -21,26 +21,51 @@
   height: 135vh;
 }
 
-@mixin desktop() {
-  @media (max-width: 1200px) {
-    @content;
-  }
-}
+// @mixin desktop() {
+//   @media (max-width: 1200px) {
+//     @content;
+//   }
+// }
 
-@mixin tablet() {
-  @media (max-width: 900px) {
-    @content;
-  }
-}
+// @mixin tablet() {
+//   @media (max-width: 900px) {
+//     @content;
+//   }
+// }
 
-@mixin phone() {
-  @media (max-width: 600px) {
-    @content;
-  }
-}
+// @mixin phone() {
+//   @media (max-width: 600px) {
+//     @content;
+//   }
+// }
 
-@mixin smallerPhones() {
-  @media (max-width: 400px) {
-    @content;
+// @mixin smallerPhones() {
+//   @media (max-width: 400px) {
+//     @content;
+//   }
+// }
+
+@mixin bp($point) {
+  $smallerPhones: "(min-width: 300px) and (max-width: 400px)";
+  $phones: "(min-width: 401px) and (max-width: 600px)";
+  $tablet: "(min-width: 601px) and (max-width: 900px)";
+  $desktop: "(min-width: 901px) and (max-width: 1024px)";
+
+  @if $point == smallerPhones {
+    @media #{$smallerPhones} {
+      @content;
+    }
+  } @else if $point == phones {
+    @media #{$phones} {
+      @content;
+    }
+  } @else if $point == tablet {
+    @media #{$tablet} {
+      @content;
+    }
+  } @else if $point == desktop {
+    @media #{$desktop} {
+      @content;
+    }
   }
 }

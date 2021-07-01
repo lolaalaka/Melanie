@@ -17,11 +17,11 @@ $white: #fff;
   color: $white;
   position: relative;
 
-  @include phone {
+  @include bp(phone) {
     width: 100%;
     padding-top: 9%;
   }
-  @include smallerPhones {
+  @include bp(smallerPhones) {
     width: 100%;
     padding-top: 10%;
   }
@@ -29,26 +29,26 @@ $white: #fff;
 
 .navAbout {
   @include layOut();
-  @include smallerPhones {
+  @include bp(smallerPhones) {
     display: none;
   }
 }
 
 .navMid {
-  @include smallerPhones {
+  @include bp(smallerPhones) {
     margin-left: 5%;
   }
 }
 
 .logo {
-  @include smallerPhones {
+  @include bp(smallerPhones) {
     width: 120px;
   }
 }
 
 .navAboutII {
   @include layOut();
-  @include smallerPhones {
+  @include bp(smallerPhones) {
     display: none;
   }
 }
