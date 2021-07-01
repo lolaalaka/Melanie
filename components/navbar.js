@@ -57,11 +57,7 @@ const Navbar = () => {
         <div
           className={dropDown === true ? "dropDownConVisible" : "dropDownCon"}
         >
-          <div
-            className={
-              router.asPath === "/about" ? "dropDownAbout" : "dropDown"
-            }
-          >
+          <div className={router.asPath === "/" ? "dropDownAbout" : "dropDown"}>
             <div className="textCon">
               <a href="/homepage">
                 <div className="ddText">Home</div>
