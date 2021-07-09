@@ -272,7 +272,7 @@ $text-gray: #d6d0ce;
     position: absolute;
     left: 55%;
     top: 10%;
-    z-index: 2;
+    z-index: 4;
 
     @include bp(phone) {
       height: 50vh;
