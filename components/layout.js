@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
   return (
     <div
       className={
-        router.asPath === "/homepagegit" || router.asPath === "/contact"
+        router.asPath === "/homepage" || router.asPath === "/contact"
           ? "layoutContent"
           : "layoutTwo"
       }
