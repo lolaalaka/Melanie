@@ -25,7 +25,6 @@ $text-gray: #d6d0ce;
     top: -18%;
     left: 25%;
     color: $white;
-    z-index: 4;
 
     @include bp(tablet) {
       top: -10%;

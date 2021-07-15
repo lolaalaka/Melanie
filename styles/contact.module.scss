@@ -11,9 +11,6 @@ $text-gray: #d6d0ce;
   height: 90vh;
   z-index: -1;
 }
-.contactTextCon {
-  z-index: -1;
-}
 
 .contactText {
   @include editorialText();
