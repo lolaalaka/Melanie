@@ -46,6 +46,10 @@ $white: #fff;
     @include bp(phone) {
       top: 87%;
     }
+
+    @include bp(smallerPhones) {
+      top: 90%;
+    }
   }
 
   .img {
@@ -75,6 +79,10 @@ $white: #fff;
     @include bp(phone) {
       top: 90%;
       left: -5%;
+    }
+
+    @include bp(smallerPhones) {
+      top: 92%;
     }
   }
 
@@ -106,6 +114,10 @@ $white: #fff;
 
     @include bp(phone) {
       top: 87%;
+    }
+
+    @include bp(smallerPhones) {
+      top: 90%;
     }
   }
 
