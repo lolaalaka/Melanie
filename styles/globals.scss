@@ -40,7 +40,7 @@ a {
   max-width: 100%;
   width: 50vw;
   height: 25vh;
-  position: absolute;
+  position: relative;
   right: 0;
   z-index: 20;
 }
@@ -65,7 +65,6 @@ a {
 
 .textCon {
   padding-top: 20px;
-  z-index: 20;
 }
 .ddText {
   color: white;

@@ -11,8 +11,8 @@ const About = () => {
     <div className={styles.container}>
       <div className={styles.inner}>
         <div className={styles.firstCard}>
-          <div className={styles.editorial}>Editorial</div>
           <div className={styles.firstImg}></div>
+          <div className={styles.editorial}>Editorial</div>
         </div>
         <div className={styles.directorTexts}>
           <div className={styles.textGroup}>
