@@ -200,7 +200,6 @@ export const aboutAnimation = () => {
       skew: 5,
       ease: "fadeIn.easeIn",
       duration: 0.7,
-      delay: 2.6,
       stagger: 0.3,
     }
   );

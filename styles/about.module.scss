@@ -18,6 +18,10 @@ $text-gray: #d6d0ce;
   margin: 15% auto 0;
   position: relative;
 
+  @include bp(smallerPhones) {
+    height: 100vh;
+  }
+
   .editorial {
     @include editorialText();
     font-size: 14vw;
@@ -75,6 +79,10 @@ $text-gray: #d6d0ce;
   height: 100vh;
   margin: 10% 5% 0;
 
+  @include bp(smallerPhones) {
+    height: 70vh;
+  }
+
   .secondImg {
     background-image: url("https://images.unsplash.com/photo-1594327248395-7354c282866d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d29tYW4lMjBmYWNlfGVufDB8MHwwfHRlYWx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=60");
     @include background();
@@ -87,6 +95,10 @@ $text-gray: #d6d0ce;
   margin: 15% 5% 0 20%;
   position: relative;
   z-index: 10;
+
+  @include bp(smallerPhones) {
+    height: 60vh;
+  }
 
   .editorialII {
     @include editorialText();
@@ -127,10 +139,17 @@ $text-gray: #d6d0ce;
   height: 330vh;
   margin: 20% auto 0;
 
+  @include bp(smallerPhones) {
+    height: 250vh;
+  }
   .fifthImgCon {
     @include lowerImages();
     position: absolute;
     right: 0;
+
+    @include bp(smallerPhones) {
+      height: 100vh;
+    }
 
     .fifthImg {
       @include background();
@@ -143,6 +162,10 @@ $text-gray: #d6d0ce;
     position: absolute;
     left: 0;
     top: 25%;
+
+    @include bp(smallerPhones) {
+      height: 100vh;
+    }
 
     .sixthImg {
       @include background();
@@ -159,6 +182,11 @@ $text-gray: #d6d0ce;
     position: absolute;
     right: 0;
     top: 59%;
+
+    @include bp(smallerPhones) {
+      height: 100vh;
+      top: 50%;
+    }
 
     .seventhImg {
       @include background();
@@ -183,17 +211,15 @@ $text-gray: #d6d0ce;
     height: 70vh;
   }
 
+  @include bp(smallerPhones) {
+    height: 50vh;
+  }
+
   .threeEditCon {
     text-align: center;
   }
 
   .editorialIII {
-    @include editorialText();
-    font-size: 16vw;
-    color: $white;
-  }
-
-  .thirdText {
     @include editorialText();
     font-size: 16vw;
     color: $white;
@@ -208,7 +234,12 @@ $text-gray: #d6d0ce;
     transform: rotate(10deg);
 
     @include bp(phone) {
-      left: 15%;
+      left: 30%;
+    }
+
+    @include bp(smallerPhones) {
+      left: 25%;
+      width: 50%;
     }
   }
 }
@@ -221,6 +252,10 @@ $text-gray: #d6d0ce;
 
   @include bp(phone) {
     margin-top: 40%;
+  }
+
+  @include bp(smallerPhones) {
+    margin-top: 60%;
   }
 
   .npImagesCon {
@@ -237,6 +272,10 @@ $text-gray: #d6d0ce;
     transform: rotate(7deg);
     position: absolute;
     top: -5%;
+
+    @include bp(smallerPhones) {
+      height: 50vh;
+    }
 
     @include bp(phone) {
       height: 50vh;
@@ -259,6 +298,10 @@ $text-gray: #d6d0ce;
       height: 50vh;
     }
 
+    @include bp(smallerPhones) {
+      height: 50vh;
+    }
+
     .tenthImg {
       @include background();
       background-image: url(/tenthImg.png);
@@ -274,6 +317,10 @@ $text-gray: #d6d0ce;
     z-index: -1;
 
     @include bp(phone) {
+      height: 50vh;
+    }
+
+    @include bp(smallerPhones) {
       height: 50vh;
     }
 
