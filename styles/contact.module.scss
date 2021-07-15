@@ -2,14 +2,14 @@
 $white: #fff;
 $text-gray: #d6d0ce;
 
-.container {
+.containerContact {
   max-width: 100%;
-  z-index: -1;
 }
 
-.inner {
+.innerContact {
   width: 100%;
   height: 90vh;
+  z-index: -1;
 }
 .contactTextCon {
   z-index: -1;

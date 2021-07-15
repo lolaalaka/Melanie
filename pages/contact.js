@@ -7,8 +7,8 @@ const Contact = () => {
     contactAnimation(), [];
   });
   return (
-    <div className={styles.container}>
-      <div className={styles.inner}>
+    <div className={styles.containerContact}>
+      <div className={styles.innerContact}>
         <div className={styles.contactTextCon}>
           <div className={styles.contactText}>Contact</div>
         </div>
