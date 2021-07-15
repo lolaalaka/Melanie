@@ -16,7 +16,6 @@ $text-gray: #d6d0ce;
   height: 120vh;
   margin: 15% auto 0;
   position: relative;
-  z-index: 2;
 
   .editorial {
     @include editorialText();
