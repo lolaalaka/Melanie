@@ -26,8 +26,8 @@ $text-gray: #d6d0ce;
     @include editorialText();
     font-size: 14vw;
     position: absolute;
-    top: -18%;
-    left: 25%;
+    top: -5%;
+    left: 20%;
     color: $white;
 
     @include bp(tablet) {
